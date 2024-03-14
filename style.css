@@ -1,0 +1,335 @@
+@import url(https://fonts.googleapis.com/css?family=Jura:300,regular,500,600,700);
+@import url(https://fonts.googleapis.com/css?family=Jost:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@font-face {
+	font-family: OpenSans;
+	src: url("fonts/OpenSans-Regular.ttf");
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #ffffff;
+	font-family: OpenSans;
+	font-size: 14pt;
+	display: flex;
+	justify-content: center;
+}
+
+h1,h2,h3,h4,p {
+	padding: 5px 0;
+}
+
+hr {
+	margin: 10px 0;
+	border: solid 1px black;
+}
+
+a {
+	color: black;
+	cursor:pointer;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+img {
+	max-width:100%;
+	object-fit: cover;
+}
+
+.text-left {
+	text-align: left !important;
+}
+
+.text-center {
+	text-align: center !important;
+}
+
+
+.text-justify {
+	text-align: justify !important;
+}
+
+.text-small {
+	font-size: 12pt;
+	color: gray;
+}
+
+
+
+
+form div.part {
+	display: flex;
+	align-items: center;
+}
+
+form div.part > *:nth-child(1) {
+	margin-right: 10px;
+}
+
+input:invalid:not(:placeholder-shown) {border-color: red;}
+input:valid:not(:placeholder-shown) {border-color: green;}
+
+input,select,textarea,button {
+	width: 100%;
+	height: 50px;
+	outline: none;
+	margin: 10px 0;
+	transition: .2s;
+	font-size: 14pt;
+	padding-left: 10px;
+	border-radius: 5px;
+	font-family: OpenSans;
+	border: solid 1px black;
+}
+
+input[type=file] {
+	padding: 0;
+	border:  none;
+	height: 30px;
+}
+
+input[type=checkbox] {
+	width: 25px;
+	height: 25px;
+	margin-right: 10px;
+}
+
+textarea {
+	padding: 10px;
+	height: 100px;
+}
+
+
+
+
+
+
+
+
+
+div.message {
+	font-size: 20pt;
+	color: gray;
+	text-align:center;
+	margin: 40px 0;
+}
+.head {
+	
+	padding: 10px 0;
+	margin-bottom: 20px;
+}
+div.head {
+
+	padding: 20px 0;
+	margin: 40px 0 30px;
+	font-size: 20pt;
+	text-align: center;
+}
+
+div.wrap {
+	padding: 20px;
+	margin: 0 auto;
+	border-radius: 5px;
+	background-color: white;
+	box-shadow: 0 0 3px rgba(0,0,0,0.5);
+	width: 70%;
+}
+
+
+
+
+
+
+
+.content ul li {
+	width: 100%;
+	padding: 17px;
+	transition: .2s;
+	text-align: center;
+}
+
+
+
+
+main div.product {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+main div.product > div {
+	width: 49%;
+	flex-shrink: 0;
+}
+
+main div.product div.image {
+	text-align: center;
+}
+
+main div.product img {
+	height: 300px;
+}
+
+
+/*SLIDER*/
+div#slider {
+	position: relative;
+	padding: 10px 5px;
+	overflow: hidden; 
+}
+
+div#slider div.slides {
+	position: relative;
+	display: flex;
+	transition: .4s;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	left: 0;
+}
+
+div#slider div.slides div.slide {
+	flex-shrink: 0;
+	text-align:center;
+	margin-right: 20px;
+	margin-bottom: 0;
+}
+
+div.slide img {
+	margin-bottom: 10px;
+}
+
+/*FILTRATION*/
+span {
+	cursor: pointer;
+}
+
+span:hover {
+	text-decoration: underline;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu1{
+    width: 80.57%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #3498db00;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Jura';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+
+color: #FFFFFF;
+}
+
+/* Dropdown button on hover & focus */
+
+
+/* The container <div> - needed to position the dropdown content */
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+  ul.posts{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  ul.posts li.post{
+    border:1px solid #96b8be;
+    width: 30%;
+    height: 30%;
+   margin: 3%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+  }
+  ul.posts li.post img{
+    width: 90%;
+    height: 200px;
+  }
+  ul.posts li.post h1{
+    font-family: 'FallingSky-Medium', sans-serif;
+    font-size: 17px;
+    width: 80%;
+  }
+  ul.posts li.post a{
+    font-family: 'FallingSky-Medium', sans-serif;
+    font-size: 20px;
+    width: 80%;
+    color: rgb(255, 255, 255);
+    background-color: #96b8be;
+text-decoration: none;
+text-align: center;
+border-radius: 10px;
+margin-bottom: 8px;
+  }
+  ul.posts li.post p{
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+  }
+  ul.posts li.post a:hover{
+    background-color: rgb(142, 141, 196);
+   
+  }
+
+
+
+
+
+
+
+
+
+
